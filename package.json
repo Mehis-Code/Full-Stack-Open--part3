@@ -7,14 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build:ui":    "rm -rf build && cd C:/Users/Mehis/FSopen/2/puhelinluettelo && npm run build && cp -r build C:/Users/Mehis/FSOpen3",
+    "build:ui": "rm -rf build && cd C:/Users/Mehis/FSopen/2/puhelinluettelo && npm run build && cp -r build C:/Users/Mehis/FSOpen3",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "Lotte",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.0",
     "express": "^4.18.2",
+    "mongoose": "^7.2.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
